@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div x-data="{isOpen:1}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+  <div x-data="{isOpen:1}">
     <dl>
       <dt><button @click="isOpen = 1">Lorem, ipsum</button></dt>
-      <dd x-show="isOpen === 1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, in.</dd>
+      <dd x-show="isOpen === 1" x-transition.scale.0.origin.top.left.duration.5000ms>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Vel, in.</dd>
     </dl>
     <dl>
       <dt><button @click="isOpen = 2">Iusto, officia.</button></dt>
-      <dd x-show="isOpen === 2" x-transition.scale.origin.top>Debitis iusto modi odio dolore? Exercitationem ea libero aut officia!</dd>
+      <dd x-show="isOpen === 2" x-transition.scale.0.origin.top.left.duration.5000ms>Debitis iusto modi odio dolore? Exercitationem ea libero
+        aut officia!</dd>
     </dl>
     <dl>
       <dt><button @click="isOpen = 3">Corporis, eaque.</button></dt>
-      <dd x-show="isOpen === 3" x-transition.scale.origin.top>Accusamus vitae, corporis iste et consequatur dolorem eius. Debitis, nam!</dd>
+      <dd x-show="isOpen === 3" x-transition.scale.0.origin.top.left.duration.5000ms>Accusamus vitae, corporis iste et consequatur dolorem
+        eius. Debitis, nam!</dd>
     </dl>
     <button @click="isOpen = 0">Fermer tout</button>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
