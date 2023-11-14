@@ -9,17 +9,20 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div x-data="{isOpen:1}">
     <dl>
-      <dt>Lorem, ipsum</dt>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, in.</dd>
+      <dt><button @click="isOpen = 1">Lorem, ipsum</button></dt>
+      <dd x-show="isOpen === 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, in.</dd>
     </dl>
     <dl>
-      <dt>Iusto, officia.</dt>
-      <dd>Debitis iusto modi odio dolore? Exercitationem ea libero aut officia!</dd>
+      <dt><button @click="isOpen = 2">Iusto, officia.</button></dt>
+      <dd x-show="isOpen === 2">Debitis iusto modi odio dolore? Exercitationem ea libero aut officia!</dd>
     </dl>
     <dl>
-      <dt>Corporis, eaque.</dt>
-      <dd>Accusamus vitae, corporis iste et consequatur dolorem eius. Debitis, nam!</dd>
+      <dt><button @click="isOpen = 3">Corporis, eaque.</button></dt>
+      <dd x-show="isOpen === 3">Accusamus vitae, corporis iste et consequatur dolorem eius. Debitis, nam!</dd>
     </dl>
+    <button @click="isOpen = 0">Fermer tout</button>
+    </div>
   </body>
 </html>
