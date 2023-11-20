@@ -20,18 +20,22 @@
       }
 
       #accordeon li.actif {
+        width: 317px;
 
       }
 
       #accordeon li figure {
+        display: flex;
         width: 317px;
+        margin: 0;
+
       }
     </style>
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li>
+      <li class="actif">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -49,7 +53,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="actif">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
