@@ -9,9 +9,13 @@
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
 
-
+    #panneaux {
+      position : relative;
+      
+    }
 
   </style>
+
 </head>
 
 <body>
@@ -26,7 +30,7 @@
       <li role="tab" :class="{actif:(ouvert === 3)}" @click="ouvert = 3">Onglet 3</li>
     </ul>
 
-    <div>
+    <div id = "panneaux">
       <div role="tabpanel" x-show="ouvert === 1">
         <h1>Panneau 1</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint id eligendi illum nulla dolores distinctio?
