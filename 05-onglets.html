@@ -25,37 +25,38 @@
 
 <body>
   <h1>Onglets 2</h1>
-  <div id="onglets" x-data="{
-     ouvert : 1,
-    }">
+  <div id="parent">
+    <div id="onglets" x-data="{
+       ouvert : 1,
+      }">
 
-    <ul role="tablist">
-      <li role="tab" :class="{actif:(ouvert === 1)}" @click="ouvert = 1">Onglet 1</li>
-      <li role="tab" :class="{actif:(ouvert === 2)}" @click="ouvert = 2">Onglet 2</li>
-      <li role="tab" :class="{actif:(ouvert === 3)}" @click="ouvert = 3">Onglet 3</li>
-    </ul>
+      <ul role="tablist">
+        <li role="tab" :class="{actif:(ouvert === 1)}" @click="ouvert = 1">Onglet 1</li>
+        <li role="tab" :class="{actif:(ouvert === 2)}" @click="ouvert = 2">Onglet 2</li>
+        <li role="tab" :class="{actif:(ouvert === 3)}" @click="ouvert = 3">Onglet 3</li>
+      </ul>
 
-    <div id = "panneaux">
-      <div role="tabpanel" x-show="ouvert === 1">
-        <h1>Panneau 1</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint id eligendi illum nulla dolores distinctio?
-          Minima fuga maiores voluptatem harum veniam exercitationem earum officia obcaecati quidem vel, deleniti ut
-          aspernatur?</p>
-      </div>
-      <div role="tabpanel" x-show="ouvert === 2">
-        <h1>Panneau 2</h1>
-        <p>Autem consequatur illo ullam itaque sunt nulla? Nulla assumenda vel vero unde adipisci ab eum accusantium,
-          officiis, fugit voluptatibus illo saepe repellendus voluptatem architecto fuga necessitatibus beatae eaque!
-          Eligendi, laboriosam!</p>
-      </div>
-      <div role="tabpanel" x-show="ouvert === 3">
-        <h1>Panneau 3</h1>
-        <p>Deserunt earum repellat asperiores odio illo hic, dolor quae consectetur ducimus necessitatibus fuga
-          cupiditate ad voluptatem ex, saepe perferendis ratione veniam, culpa suscipit quaerat atque? Cum nam deserunt
-          modi id.</p>
+      <div id = "panneaux">
+        <div role="tabpanel" x-show="ouvert === 1">
+          <h1>Panneau 1123</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint id eligendi illum nulla dolores distinctio?
+            Minima fuga maiores voluptatem harum veniam exercitationem earum officia obcaecati quidem vel, deleniti ut
+            aspernatur?</p>
+        </div>
+        <div role="tabpanel" x-show="ouvert === 2">
+          <h1>Panneau 2</h1>
+          <p>Autem consequatur illo ullam itaque sunt nulla? Nulla assumenda vel vero unde adipisci ab eum accusantium,
+            officiis, fugit voluptatibus illo saepe repellendus voluptatem architecto fuga necessitatibus beatae eaque!
+            Eligendi, laboriosam!</p>
+        </div>              
+        <div role="tabpanel" x-show="ouvert === 3">
+          <h1>Panneau 3</h1>
+          <p>Deserunt earum repellat asperiores odio illo hic, dolor quae consectetur ducimus necessitatibus fuga
+            cupiditate ad voluptatem ex, saepe perferendis ratione veniam, culpa suscipit quaerat atque? Cum nam deserunt
+            modi id.</p>
+        </div>
       </div>
     </div>
-
 </body>
 
 </html>
